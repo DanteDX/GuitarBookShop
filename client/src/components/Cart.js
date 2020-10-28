@@ -89,11 +89,11 @@ const Cart = ({
         {orderList.length === 0 ? (
           <p></p>
         ) : (
-          <form onSubmit={(e) => submitHandler(e,orderId)}>
+          <form className="cartForm" onSubmit={(e) => submitHandler(e,orderId)}>
             <label htmlFor="username">Name:</label>
-            <input type="text" id="username" name="username" required />
+            <input style={{width:'100',display:'inline-block'}}type="text" id="username" name="username" required /><br/><br/>
             <label htmlFor="emailId">Email:</label>
-            <input type="email" id="emailId" name="uemailId" required />
+            <input style={{width:'100',display:'inline-block'}} type="email" id="emailId" name="uemailId" required /><br/>
             <button className="placeOrderButton" type="submit">
               Place Order
             </button>

@@ -65,12 +65,30 @@ div.navbar{
 }
 /* navbar and header done here */
 
+@media screen and (max-width:431px){
+    div.navbar{
+        grid-template-columns: 1fr;
+    }
+}
+
 .bookContent{
     display:grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 3%;
     row-gap: 5%;
     margin:1% 2%;
+}
+
+@media screen and (max-width:666px){
+    .bookContent{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:470px){
+    .bookContent{
+        grid-template-columns: 1fr;
+    }
 }
 
 .eachBook{
@@ -116,6 +134,18 @@ div.navbar{
     margin:1% 2%;
 }
 
+@media screen and (max-width:666px){
+    .guitarContent{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:470px){
+    .guitarContent{
+        grid-template-columns: 1fr;
+    }
+}
+
 .eachGuitar{
     text-align: center;
     padding:10px;
@@ -159,7 +189,8 @@ button.placeOrderButton{
     width:200px;
     font-size: 17px;
     color:white;
-    margin-left: 40%;
+    margin-left: 20%;
+    margin-top: 4px;
 }
 
 button.placeOrderButton:hover{
@@ -236,6 +267,11 @@ button.reconfirmApproval{
         grid-template-columns: 1fr;
     }
 }
+
+.cartForm{
+    margin-top: 10px;
+}
+
 
 
 
