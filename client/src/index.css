@@ -1,0 +1,241 @@
+body{
+    padding:0px;
+    margin:0px;
+}
+
+.header{
+    width:100%;
+    background:#e9798b;
+    color:white;
+    text-align:center;
+    margin:0px;
+}
+
+.header h2{
+    margin:0px;
+    padding:10px;
+}
+
+ul.navoptions{
+    list-style-type: none;
+    display:flex;
+    justify-content:space-evenly;
+    margin:0px;
+    padding:10px;
+}
+
+ul.navoptions li a{
+    color:white;
+    text-decoration: none;
+}
+ul.navoptions li a:hover{
+    color:white;
+    text-decoration: none;
+    background-color: red;
+    padding:10px;
+}
+
+ul.controls{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+    margin:0px;
+    padding:10px;
+}
+
+ul.controls li a{
+    color:white;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+ul.controls li a:hover{
+    color:white;
+    text-decoration: none;
+    background-color: green;
+    padding:10px;
+}
+
+div.navbar{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: #b32c8a;
+    font-size: large;
+}
+/* navbar and header done here */
+
+.bookContent{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 3%;
+    row-gap: 5%;
+    margin:1% 2%;
+}
+
+.eachBook{
+    text-align: center;
+    padding:10px;
+    background-color: #c18ac5;
+    /* border:1px solid  black; */
+    box-shadow: 1px 1px 2px 2px #a5a3a3;
+    border-radius: 10px;
+}
+
+.eachBook:hover{
+    text-align: center;
+    padding:10px;
+    background-color: #e1a3e6;
+    /* border:1px solid  black; */
+    box-shadow: 1px 1px 4px 4px #a5a3a3;
+    border-radius: 10px;
+    position:relative;
+    top:3px;
+}
+
+.eachBook button{
+    background-color: pink;
+    padding:4px;
+    border-radius: 7px;
+}
+
+.eachBook button:hover{
+    background-color: #f190d4;
+    padding:4px;
+    box-shadow: 1px 1px 3px 3px white;
+    border-radius: 3px;
+}
+
+/* books done here */
+
+.guitarContent{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 3%;
+    row-gap: 5%;
+    margin:1% 2%;
+}
+
+.eachGuitar{
+    text-align: center;
+    padding:10px;
+    background-color: #c18ac5;
+    /* border:1px solid  black; */
+    box-shadow: 1px 1px 2px 2px #a5a3a3;
+    border-radius: 10px;
+}
+
+.eachGuitar:hover{
+    text-align: center;
+    padding:10px;
+    background-color: #e1a3e6;
+    /* border:1px solid  black; */
+    box-shadow: 1px 1px 4px 4px #a5a3a3;
+    border-radius: 10px;
+    position:relative;
+    top:3px;
+}
+
+.eachGuitar button{
+    background-color: pink;
+    padding:4px;
+    border-radius: 7px;
+}
+
+.eachGuitar button:hover{
+    background-color: #f190d4;
+    padding:4px;
+    box-shadow: 1px 1px 3px 3px white;
+    border-radius: 3px;
+}
+
+/* books done here */
+
+/* place order button */
+button.placeOrderButton{
+    background-color: #e72f4e;
+    padding:4px;
+    border-radius: 7px;
+    width:200px;
+    font-size: 17px;
+    color:white;
+    margin-left: 40%;
+}
+
+button.placeOrderButton:hover{
+    background-color: #e72f4e;
+    padding:4px;
+    box-shadow: 1px 1px 3px 3px #e47373;
+    border-radius: 3px;
+}
+
+.placeOrderButtonWrapper{
+    margin:0px auto;
+}
+
+.eachOrderContainer{
+    background-color: pink;
+    margin:20px;
+    box-shadow: 1px 1px 1px 1px #d89898; 
+}
+
+.eachOrderContainer:hover{
+   position:relative;
+   left:3px;
+   top:4px;
+   box-shadow: 1px 1px 4px 4px #d89898; 
+
+    
+}
+
+.eachOrder{
+    margin:10px;
+    margin-top: 0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4px;
+    padding:10px;
+    padding-top: 0px;
+}
+
+.eachOrderProduct{
+    margin:10px;
+    background-color: plum;
+    text-align: center;
+    padding:4px;
+    border-radius: 20px;
+}
+
+.approveButton{
+    background-color: #40ff2f9a;
+    padding:4px;
+}
+
+.declineButton{
+    background-color: #f04c4c;
+    padding:4px;
+}
+
+button.reconfirmDecline{
+    background-color: #40ff2f9a;
+}
+
+button.reconfirmApproval{
+    background-color: #f04c4c;
+}   
+
+@media screen and (max-width:648px){
+    .eachOrder{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width:470px){
+    .eachOrder{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
